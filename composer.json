@@ -1,0 +1,28 @@
+{
+    "name": "jade/pcm-to-wav",
+    "description": "Pcm波形文件转Wav音频文件",
+    "type": "library",
+    "keywords": [
+        "Jade",
+        "CmsTop"
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "php": ">=5.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jade",
+            "email": "hmy940118@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+        "psr-4":{
+            "PcmToWave\\":"src"
+        }
+    }
+}
