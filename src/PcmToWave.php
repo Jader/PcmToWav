@@ -53,7 +53,7 @@ class PcmToWave
 
             $fmt = new \stdClass();
             $fmt->ID = array(0x66, 0x6D, 0x74, 0x20);       // fmt
-            $fmt->ChunkSize =  array(0x10, 0x0, 0x0, 0x0);  // 16 little endian
+            $fmt->ChunkSize = array(0x10, 0x0, 0x0, 0x0);  // 16 little endian
             $fmt->AudioFormat = array(0x1, 0x0);            // PCM = 1 little endian
             if ($numchannels == 2) {
                 $fmt->NumChannels = array(0x2, 0x0);        // 立体声为2
