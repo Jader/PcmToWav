@@ -115,4 +115,31 @@ php Test.php
     
 14、 `Data` 占pcm文件大小个byte, 表示原始的PCM音频数据
 
+ `getLittleEndianByteArray` 方法说明
+ 
+ `getLittleEndianByteArray`主要是将传递过来的数进行处理已转换成需要使用的数据，站几字节，就返回多少长度的数组
+
+    private static function getLittleEndianByteArray($lValue, $short = false)
+        {
+            $b = array(0, 0, 0, 0);
+            $running = $lValue / pow(16, 6);
+            $b[3] = floor($running);
+            $running -= $b[3];
+            $running *= 256;
+            $b[2] = floor($running);
+            $running -= $b[2];
+            $running *= 256;
+            $b[1] = floor($running);
+            $running -= $b[1];
+            $running *= 256;
+            $b[0] = round($running);
+    
+            if ($short) { // 为 `true` 时返回长度为2的数组
+                $tmp = array_slice($b, 0, 2);
+                $b = $tmp;
+            }
+    
+            return $b;
+        }
+
 整个文件的开头44字节信息也基本说明完了，下面就说下处理类文件的实现，这边处理的逻辑先临时创建一个只有44字节的文件，然后将 `PCM` 文件的数据追加进该文件，最终根据WAV的格式规则实际计算出真实的头部44字节信息并将文件修改指针指向文件开头，然后修改为新产生的数据
