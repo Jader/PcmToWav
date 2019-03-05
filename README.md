@@ -28,13 +28,16 @@ $data = PcmToWave::init($pcm_file, $wav_file); // 调用转换
 ## 测试Demo使用
 
 ```bash
-cd PcmToWav/test
+进入扩展包目录
+cd vendor/jade/pcm-to-wav
+composer install
+cd test
 php Test.php
 ```
 
 ## 原理介绍
 
-#### 什么是 `PCM` 和 `WAV` ？
+### 什么是 `PCM` 和 `WAV` ？
 
  `PCM` ：PCM（Pulse Code Modulation----脉码调制录音)。所谓 `PCM` 录音就是将声音等模拟信号变成符号化的脉冲列，再予以记录。 `PCM` 信号是由 `1` 、 `0` 等符号构成的数字信号，而未经过任何编码和压缩处理。与模拟信号比，它不易受传送系统的杂波及失真的影响。动态范围宽，可得到音质相当好的影响效果。
 
