@@ -1,7 +1,7 @@
 # PHP 实现PCM转WAV
 
-[![License](https://img.shields.io/packagist/l/inhere/console.svg?style=flat-square)](LICENSE)
-[![Php Version](https://img.shields.io/badge/php-%3E=5.4-brightgreen.svg?maxAge=2592000)](https://packagist.org/packages/jade/pcm-to-wav)
+[![License](https://img.shields.io/packagist/l/inhere/console.svg)](LICENSE)
+[![Php Version](https://img.shields.io/badge/php-%3E=5.4-brightgreen.svg)](https://packagist.org/packages/jade/pcm-to-wav)
 [![Latest Stable Version](http://img.shields.io/packagist/v/jade/pcm-to-wav.svg)](https://packagist.org/packages/jade/pcm-to-wav)
 
 此扩展能快速将PCM格式的音波文件转换成WAV格式的音频文件，目前只为公司项目提供解决方案。
