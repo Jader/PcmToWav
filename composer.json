@@ -1,5 +1,5 @@
 {
-    "name": "jader/pcm-to-wav",
+    "name": "jade/pcm-to-wav",
     "description": "Pcm波形文件转Wav音频文件",
     "type": "library",
     "keywords": [
