@@ -1,5 +1,5 @@
 {
-    "name": "jade/pcm-to-wav",
+    "name": "Jader/pcm-to-wav",
     "description": "Pcm波形文件转Wav音频文件",
     "type": "library",
     "keywords": [
@@ -15,7 +15,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Jade",
+            "name": "Jader",
             "email": "hmy940118@gmail.com"
         }
     ],
