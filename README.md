@@ -50,9 +50,9 @@ php Test.php
 
 首先我们看一下WAV的格式规则, 如下图
 
-![](https://uimg.jadert.com/15517554187085.jpg)
+![](https://cdn.jsdelivr.net/gh/jader/resource/images/2024/202405311833829.jpeg)
 
-![](https://uimg.jadert.com/15517599631747.jpg)
+![](https://cdn.jsdelivr.net/gh/jader/resource/images/2024/202405311834709.jpeg)
 
 了解这些规则后，我们就可以撸代码吧
 
